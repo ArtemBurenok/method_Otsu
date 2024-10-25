@@ -23,7 +23,7 @@ class image_processing:
 
         return grayscale
 
-    # преобразование изображения в черно-белое по заданному порогу
+    # преобразование изображения в черно-белые по заданному порогу
     def binarize(self, threshold=128):
         grayscale = self.grayscale()
         binary_image = np.where(grayscale > threshold, 255, 0)
